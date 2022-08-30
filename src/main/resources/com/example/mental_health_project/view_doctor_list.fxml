@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mental_health_project.tableController">
+   <children>
+      <ImageView fitHeight="447.0" fitWidth="730.0" layoutX="-9.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ef.jpeg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="122.0" layoutY="106.0" prefHeight="206.0" prefWidth="419.0" style="-fx-background-radius: 7;">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="122.00003051757812" text="name" />
+          <TableColumn fx:id="age" prefWidth="54.6666259765625" text="age" />
+            <TableColumn fx:id="specialization" prefWidth="143.33331298828125" text="specialization" />
+            <TableColumn fx:id="rating" prefWidth="96.0" text="rating" />
+        </columns>
+      </TableView>
+      <Button layoutX="564.0" layoutY="354.0" mnemonicParsing="false" onAction="#showData" prefHeight="29.0" prefWidth="97.0" style="-fx-background-radius: 7; -fx-background-color: #e38672;" text="Send Email" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="63.0" layoutY="354.0" mnemonicParsing="false" onAction="#viewDoctors" prefHeight="25.0" prefWidth="74.0" style="-fx-background-radius: 7; -fx-background-color: #e38672;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="addRating" layoutX="576.0" layoutY="184.0" prefHeight="25.0" prefWidth="97.0" promptText="Add Rating" style="-fx-background-radius: 7;" />
+      <Label layoutX="603.0" layoutY="156.0" text="Rating " textFill="#5e5353">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="602.0" layoutY="231.0" mnemonicParsing="false" onAction="#addDoctorRating" style="-fx-background-radius: 7; -fx-background-color: #e38672;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchBar" layoutX="255.0" layoutY="57.0" prefHeight="25.0" prefWidth="163.0" promptText="Search for name , age , etc .." style="-fx-background-radius: 7;" />
+      <Label layoutX="314.0" layoutY="29.0" text="search " textFill="#5e5353">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="search" layoutX="444.0" layoutY="55.0" mnemonicParsing="false" onAction="#searchFor" style="-fx-background-radius: 7; -fx-background-color: #e38672;" text="Done" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="search1" layoutX="603.0" layoutY="40.0" mnemonicParsing="false" onAction="#updateTable" style="-fx-background-radius: 7; -fx-background-color: #e38672;" text="Load All" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

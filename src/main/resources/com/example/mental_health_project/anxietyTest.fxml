@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ab" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mental_health_project.AnxietyTest">
+   <children>
+      <ImageView fitHeight="416.0" fitWidth="678.0" layoutX="-4.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@anxBackground.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="39.0" layoutY="79.0" text="1. Do you worry about lots of different things?" />
+      <Label layoutX="42.0" layoutY="129.0" text="2. Do you have trouble controlling your worries?" />
+      <Label layoutX="42.0" layoutY="184.0" text="3. Do you get irritable and/or easily annoyed when anxious?" />
+      <Label layoutX="42.0" layoutY="234.0" text="4. Does worry or anxiety make you feel fatigued or worn out?" />
+      <Label layoutX="42.0" layoutY="287.0" text="5. Does worry or anxiety interfere with falling and/or staying asleep?" />
+      <Label layoutX="42.0" layoutY="336.0" text="6. Does worry or anxiety make it hard to concentrate?" />
+      <RadioButton fx:id="never" layoutX="44.0" layoutY="104.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="onev1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely" layoutX="139.0" layoutY="104.0" mnemonicParsing="false" text="Rarely" toggleGroup="$onev1" />
+      <RadioButton fx:id="sometimes" layoutX="235.0" layoutY="104.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$onev1" />
+      <RadioButton fx:id="often" layoutX="350.0" layoutY="104.0" mnemonicParsing="false" text="Often" toggleGroup="$onev1" />
+      <RadioButton fx:id="veryoften" layoutX="433.0" layoutY="104.0" mnemonicParsing="false" text="Very Often " toggleGroup="$onev1" />
+      <RadioButton fx:id="never1" layoutX="42.0" layoutY="154.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="twov1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely1" layoutX="137.0" layoutY="154.0" mnemonicParsing="false" text="Rarely" toggleGroup="$twov1" />
+      <RadioButton fx:id="sometimes1" layoutX="233.0" layoutY="154.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$twov1" />
+      <RadioButton fx:id="often1" layoutX="348.0" layoutY="154.0" mnemonicParsing="false" text="Often" toggleGroup="$twov1" />
+      <RadioButton fx:id="veryoften1" layoutX="431.0" layoutY="154.0" mnemonicParsing="false" text="Very Often " toggleGroup="$twov1" />
+      <RadioButton fx:id="never11" layoutX="44.0" layoutY="207.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="threev1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely11" layoutX="139.0" layoutY="207.0" mnemonicParsing="false" text="Rarely" toggleGroup="$threev1" />
+      <RadioButton fx:id="sometimes11" layoutX="235.0" layoutY="207.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$threev1" />
+      <RadioButton fx:id="often11" layoutX="350.0" layoutY="207.0" mnemonicParsing="false" text="Often" toggleGroup="$threev1" />
+      <RadioButton fx:id="veryoften11" layoutX="433.0" layoutY="207.0" mnemonicParsing="false" text="Very Often " toggleGroup="$threev1" />
+      <RadioButton fx:id="never111" layoutX="44.0" layoutY="263.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="fourv1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely111" layoutX="139.0" layoutY="263.0" mnemonicParsing="false" text="Rarely" toggleGroup="$fourv1" />
+      <RadioButton fx:id="sometimes111" layoutX="235.0" layoutY="263.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$fourv1" />
+      <RadioButton fx:id="often111" layoutX="350.0" layoutY="263.0" mnemonicParsing="false" text="Often" toggleGroup="$fourv1" />
+      <RadioButton fx:id="veryoften111" layoutX="433.0" layoutY="263.0" mnemonicParsing="false" text="Very Often " toggleGroup="$fourv1" />
+      <RadioButton fx:id="never112" layoutX="44.0" layoutY="312.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="fivev1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely112" layoutX="139.0" layoutY="312.0" mnemonicParsing="false" text="Rarely" toggleGroup="$fivev1" />
+      <RadioButton fx:id="sometimes112" layoutX="235.0" layoutY="312.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$fivev1" />
+      <RadioButton fx:id="often112" layoutX="350.0" layoutY="312.0" mnemonicParsing="false" text="Often" toggleGroup="$fivev1" />
+      <RadioButton fx:id="veryoften112" layoutX="433.0" layoutY="312.0" mnemonicParsing="false" text="Very Often " toggleGroup="$fivev1" />
+      <RadioButton fx:id="never113" layoutX="44.0" layoutY="360.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="sixv1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely113" layoutX="139.0" layoutY="360.0" mnemonicParsing="false" text="Rarely" toggleGroup="$sixv1" />
+      <RadioButton fx:id="sometimes113" layoutX="235.0" layoutY="360.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$sixv1" />
+      <RadioButton fx:id="often113" layoutX="350.0" layoutY="360.0" mnemonicParsing="false" text="Often" toggleGroup="$sixv1" />
+      <RadioButton fx:id="veryoften113" layoutX="433.0" layoutY="360.0" mnemonicParsing="false" text="Very Often " toggleGroup="$sixv1" />
+      <Button fx:id="next" layoutX="535.0" layoutY="361.0" mnemonicParsing="false" onAction="#start" prefHeight="27.0" prefWidth="111.0" style="-fx-background-color: #C96E50;" text="next" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="672.0" style="-fx-background-color: #E8E2E2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mental_health_project.HelloController">
+   <children>
+      <ImageView fitHeight="287.0" fitWidth="280.0" layoutX="361.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image%201.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="20.0" fitWidth="200.0" layoutX="243.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@title.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="373.0" fitWidth="300.0" layoutX="30.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@table.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="209.0" layoutX="76.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@body%20in%20table.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="51.0" layoutX="66.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@email.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="signinEmail" layoutX="76.0" layoutY="188.0" prefHeight="25.0" prefWidth="193.0" promptText="Enter your email" style="-fx-background-radius: 7;" />
+      <ImageView fitHeight="16.0" fitWidth="60.0" layoutX="76.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@password.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="signin" layoutX="76.0" layoutY="308.0" mnemonicParsing="false" onAction="#signinbtn" prefHeight="25.0" prefWidth="193.0" style="-fx-background-color: #EC4B4B; -fx-background-radius: 7;" text="sign in" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="114.0" layoutX="66.0" layoutY="356.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@don't%20have%20an%20account.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="signinPassword" layoutX="76.0" layoutY="252.0" prefHeight="25.0" prefWidth="193.0" promptText="Enter your password" style="-fx-background-radius: 7;" />
+      <Button fx:id="gotosignup" layoutX="180.0" layoutY="354.0" mnemonicParsing="false" onAction="#signup_page" prefHeight="19.0" prefWidth="97.0" style="-fx-background-color: #FFFF;" text="Sign up for free !" textFill="#ec4b4b">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="gotosignupDoctor" layoutX="54.0" layoutY="407.0" mnemonicParsing="false" onAction="#signupDoctor" prefHeight="22.0" prefWidth="126.0" style="-fx-background-color: #E8E2E2;" text="Sign up as a Doctor " textFill="#ec4b4b">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="later" layoutX="173.0" layoutY="407.0" mnemonicParsing="false" onAction="#viewDoctors" prefHeight="22.0" prefWidth="85.0" style="-fx-background-color: #E8E2E2;" text="Later" textFill="#ec4b4b">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="viewd" layoutX="258.0" layoutY="407.0" mnemonicParsing="false" onAction="#viewDoctors" onDragDetected="#viewDoctors" prefHeight="22.0" prefWidth="85.0" style="-fx-background-color: #E8E2E2;" text="view doctors" textFill="#ec4b4b">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="takeTest" layoutX="561.0" layoutY="407.0" mnemonicParsing="false" onAction="#takeTest" onDragDetected="#viewDoctors" prefHeight="22.0" prefWidth="85.0" style="-fx-background-color: #E8E2E2;" text="take test" textFill="#ec4b4b">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="logout" layoutX="591.0" layoutY="65.0" mnemonicParsing="false" onAction="#logoutCurrentUser" style="-fx-background-radius: 7; -fx-background-color: #e38672;" text="log out" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="rscheckemail" layoutX="323.0" layoutY="193.0" text="Label" visible="false">
+         <font>
+            <Font name="System Bold" size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

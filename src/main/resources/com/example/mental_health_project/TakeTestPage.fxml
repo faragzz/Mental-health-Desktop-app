@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mental_health_project.TakeTestController">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="677.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ef.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="239.0" layoutY="29.0" text="Take Test" textFill="#ff8306">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="ocdBtn" layoutX="93.0" layoutY="111.0" mnemonicParsing="false" onAction="#ocdgo" prefHeight="102.0" prefWidth="229.0" style="-fx-background-radius: 50; -fx-background-color: #C96E50;" text="OCD" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="anxietyBtn" layoutX="355.0" layoutY="111.0" mnemonicParsing="false" onAction="#anxietygo" prefHeight="102.0" prefWidth="229.0" style="-fx-background-radius: 50; -fx-background-color: #C96E50;" text="Anxiety" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="depressionBtn" layoutX="93.0" layoutY="234.0" mnemonicParsing="false" onAction="#depressiongo" prefHeight="102.0" prefWidth="229.0" style="-fx-background-radius: 50; -fx-background-color: #C96E50;" text="Depression" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="adhdBtn" layoutX="355.0" layoutY="240.0" mnemonicParsing="false" onAction="#adhdgo" prefHeight="102.0" prefWidth="229.0" style="-fx-background-radius: 50; -fx-background-color: #C96E50;" text="ADHD" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="home" layoutX="39.0" layoutY="35.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #C96E50; -fx-background-radius: 7;" text="home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

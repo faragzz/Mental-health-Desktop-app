@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mental_health_project.ocdTest">
+   <children>
+      <ImageView fitHeight="496.0" fitWidth="674.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@ocdBackground.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="23.0" layoutY="103.0" text="6. Do you engage in rituals that provide temporary relief to your anxiety, such as counting ," />
+      <Label layoutX="36.0" layoutY="120.0" text="checking, or cleaning?" />
+      <Label layoutX="23.0" layoutY="179.0" text="7. Do you spend at least one hour a day thinking obsessive thoughts or performing ritualistic " />
+      <Label layoutX="37.0" layoutY="196.0" text="behavior to avoid angst?" />
+      <Label layoutX="23.0" layoutY="266.0" text="8. Is your job performance, home life, or social relationships significantly affected " />
+      <Label layoutX="32.0" layoutY="283.0" text="by your obsessive thinking or ritual behaviors?" />
+      <RadioButton fx:id="never113" layoutX="34.0" layoutY="147.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="six" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely113" layoutX="129.0" layoutY="147.0" mnemonicParsing="false" text="Rarely" toggleGroup="$six" />
+      <RadioButton fx:id="sometimes113" layoutX="225.0" layoutY="147.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$six" />
+      <RadioButton fx:id="often113" layoutX="340.0" layoutY="147.0" mnemonicParsing="false" text="Often" toggleGroup="$six" />
+      <RadioButton fx:id="veryoften113" layoutX="423.0" layoutY="147.0" mnemonicParsing="false" text="Very Often " toggleGroup="$six" />
+      <RadioButton fx:id="never114" layoutX="30.0" layoutY="224.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="seven" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely114" layoutX="125.0" layoutY="224.0" mnemonicParsing="false" text="Rarely" toggleGroup="$seven" />
+      <RadioButton fx:id="sometimes114" layoutX="221.0" layoutY="224.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$seven" />
+      <RadioButton fx:id="often114" layoutX="336.0" layoutY="224.0" mnemonicParsing="false" text="Often" toggleGroup="$seven" />
+      <RadioButton fx:id="veryoften114" layoutX="419.0" layoutY="224.0" mnemonicParsing="false" text="Very Often " toggleGroup="$seven" />
+      <RadioButton fx:id="never115" layoutX="30.0" layoutY="323.0" mnemonicParsing="false" text="Never">
+         <toggleGroup>
+            <ToggleGroup fx:id="eight" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rarely115" layoutX="125.0" layoutY="323.0" mnemonicParsing="false" text="Rarely" toggleGroup="$eight" />
+      <RadioButton fx:id="sometimes115" layoutX="221.0" layoutY="323.0" mnemonicParsing="false" text="Sometimes" toggleGroup="$eight" />
+      <RadioButton fx:id="often115" layoutX="336.0" layoutY="323.0" mnemonicParsing="false" text="Often" toggleGroup="$eight" />
+      <RadioButton fx:id="veryoften115" layoutX="419.0" layoutY="323.0" mnemonicParsing="false" text="Very Often " toggleGroup="$eight" />
+      <Button fx:id="done" layoutX="535.0" layoutY="358.0" mnemonicParsing="false" onAction="#done" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #C96E50;" text="done" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="totest" layoutX="585.0" layoutY="90.0" mnemonicParsing="false" onAction="#goToTest" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #C96E50; -fx-background-radius: 7;" text="To Test" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="rs" layoutX="34.0" layoutY="371.0" text="Label" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
