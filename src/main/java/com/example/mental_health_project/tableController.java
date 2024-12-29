@@ -87,7 +87,7 @@ public class tableController implements Initializable {
             pnumber = rs.getString(5);
         }
         System.out.println(pemail);
-        sendmail send = new sendmail(" whyme14u@gmail.com", "a.khaled46462@gmail.com", "mf12Asss","patient name :"+pname+"\npatient age :"+page+"\npatient mobile number :"+pnumber+"\npatient gender :"+pgender+"\npatient email :"+pemail);
+        sendmail send = new sendmail(" whyme14u@gmail.com", "a.khaled46462@gmail.com", "--------","patient name :"+pname+"\npatient age :"+page+"\npatient mobile number :"+pnumber+"\npatient gender :"+pgender+"\npatient email :"+pemail);
 
 
     }
